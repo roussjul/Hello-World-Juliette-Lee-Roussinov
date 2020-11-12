@@ -1,0 +1,48 @@
+*{
+    background-color: rgb(255, 251, 251, 0.3);
+}
+
+body{
+    background-image: url("city.jpg");
+    background-repeat: no-repeat;
+}
+
+.grid-container{
+    display: grid;
+    grid-gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    grid-template-areas:
+   'Image Header'
+   'AboutMe Discription'
+   'Resume Discription'
+   'Contact Discription'
+   ;
+}
+
+.item1 {
+    grid-area: Image;
+    background-color: salmon;
+}
+.item2 {
+    grid-area: AboutMe;
+    background-color: goldenrod;}
+.item3 {
+    grid-area: Resume;
+    background-color: greenyellow;
+}
+.item4 {
+    grid-area: Contact;
+    background-color: violet
+}
+.item5 {
+    grid-area: Header;
+    background-color:royalblue
+}
+.item6 {
+    grid-area: Discription;
+    background-color: brown;}
+
+div > div {
+    background-color: rgb(250, 243, 243, 0.5);
+}
