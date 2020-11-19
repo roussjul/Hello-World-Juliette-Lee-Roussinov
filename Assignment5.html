@@ -1,0 +1,44 @@
+ <!doctype html>
+<html>
+    <head>
+        <title> Assignment 6</title>
+        <p id="P1">Discription</p>
+        <script>
+            document.getElementById('P1').innerHTML=
+            "Snatch that barbell";
+        </script>
+
+
+    <body>
+        <p id="P3"></p>
+        <script>
+        function TotalWeight (a,b,c) {
+             return a+(b*c);
+            }
+        document.getElementById('P3').innerHTML=
+        TotalWeight(15,2,5); 
+        </script>
+
+
+        <p id="P2">Setup for Snatch</p>
+        <script>
+            function ChangeName(){
+                document.getElementById('P2').innerHTML=
+                "Overhead Position";
+            }
+        </script>
+
+        <button type="button" onclick="ChangeName()">Reveal the exercise name</button>
+
+
+        <button onclick="document.getElementById('PowerSnatch').src='PowerSnatch.jpeg'">Snatch IT!</button>
+        <img id="PowerSnatch" src="Setup.jpeg" alt="Setup Image" width="400px">
+        <button onclick="ChangeToSetup()">Setup</button>
+        <script>
+            function ChangeToSetup(){
+                document.getElementById("PowerSnatch").src="Setup.jpeg";
+            }
+        </script>
+        <br><br>
+    </body>
+</html>
