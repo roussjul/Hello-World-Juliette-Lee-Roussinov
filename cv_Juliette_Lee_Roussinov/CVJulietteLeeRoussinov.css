@@ -1,0 +1,107 @@
+*{
+    background-color: rgb(255, 251, 251, 0.3);
+}
+
+body {
+    background-image: url("CrossfitBox.jpeg");
+    font-family: GoldieBoxing;
+}
+
+.grid-container {
+    display: grid;
+    justify-items: center;
+    grid-template-areas:
+    'left right';
+    grid-gap: 10px;
+    margin: 10px;
+    padding: 15px;
+}
+
+.item1 {
+    grid-area: left;
+    height: 430px;
+    background-color: rgba(255, 255, 255, 0.63);
+    padding: 25px;
+}
+
+.item2 {
+    grid-area: right;
+    height: 430px;
+    background-color: rgba(255, 255, 255);
+    padding: 25px;
+}
+
+.item2:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+.fa:hover {
+    background-color: #049de4;
+  }
+
+.bu {
+    padding: 14px;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
+.bu-ContactMe {
+    background: #bb0000;
+    color: white;
+  }
+
+.bu-CV {
+    background: #f40083;
+    color: white;
+  }
+  
+.bu:hover {
+    background-color: #df8784;
+  }
+
+@font-face{
+    font-family: GoldieBoxing;
+    src:url(GoldieBoxing.ttf);
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
